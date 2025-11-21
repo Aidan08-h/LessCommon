@@ -1,9 +1,9 @@
-<div>
+<div class="relative">
     <h1>Food smth or another</h1>
-    <form (ngSubmit)="onSubmit()" #userInputForm="ngForm">
+    <form (ngSubmit)="onSubmit()" #userInputForm="ngForm" class="text-grey-700">
         <label for="userInput">Input query</label>
-        <input type ="text" id="userInput" required [(ngModel)]="model.userIn" name="userInput" #userIn="ngModel">
-        <button type="submit" [disabled]="!userInputForm.form.valid">Submit</button>
+        <input type ="text" id="userInput" required [(ngModel)]="model.userIn" name="userInput" #userIn="ngModel" class="input input-ghost input-primary">
+        <button type="submit" [disabled]="!userInputForm.form.valid" class="btn btn-outline btn-primary">Submit</button>
         <div [hidden]="userIn.pristine">
           {{ model.userIn }}
         </div>
