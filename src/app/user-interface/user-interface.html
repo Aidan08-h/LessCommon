@@ -1,0 +1,11 @@
+<div>
+    <h1>Food smth or another</h1>
+    <form (ngSubmit)="onSubmit()" #userInputForm="ngForm">
+        <label for="userInput">Input query</label>
+        <input type ="text" id="userInput" required [(ngModel)]="model.userIn" name="userInput" #userIn="ngModel">
+        <button type="submit" [disabled]="!userInputForm.form.valid">Submit</button>
+        <div [hidden]="userIn.pristine">
+          {{ model.userIn }}
+        </div>
+    </form>
+</div>
