@@ -2,6 +2,10 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
 
+TODO- add get requests to ai
+TODO- improve form functionality
+TODO- add css
+
 ## Development server
 
 To start a local development server, run:
